@@ -1,8 +1,9 @@
 {
-  "name": "weather_app",
+  "name": "Weather App",
   "version": "1.0.0",
-  "description": "Weather App - TOP - JS 51%",
-  "main": "webpack.common.js",
+  "description": "TOP Weather App - JS 51%",
+  "main": "script.js",
+  "homepage": "https://github.com/noOdin1/library_project#readme",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
@@ -11,26 +12,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noOdin1/weather_app.git"
+    "url": "git+https://github.com/noOdin1/library_project.git"
   },
   "keywords": [
-    "weather",
-    "location"
+    "library",
+    "catalog",
+    "card"
   ],
   "author": "noOdin1",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/noOdin1/weather_app/issues"
+    "url": "https://github.com/noOdin1/library_project/issues"
   },
-  "homepage": "https://github.com/noOdin1/weather_app#readme",
-  "dependencies": {
+  "devDependencies": {
     "css-loader": "^7.1.4",
+    "gh-pages": "^6.3.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.6",
     "style-loader": "^4.0.0",
     "webpack": "^5.105.4",
-    "webpack-cli": "^7.0.2",
-    "webpack-dev-server": "^5.2.3",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.3"
+  },
+  "dependencies": {
     "webpack-merge": "^6.0.1"
   }
 }
