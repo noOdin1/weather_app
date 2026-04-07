@@ -42,3 +42,16 @@ h1 {
   background: transparent;
 }
 
+#searchCityBar {
+  width: 90%;
+  font-size: 1.5em;
+  color: black;
+  padding: 0.2em;
+  background: transparent;
+  margin-right: 0;
+  border: none;
+}
+
+#searchCityBar:focus {
+  outline: none;
+}
