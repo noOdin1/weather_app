@@ -3,6 +3,10 @@
   font-size: 16px;
 }
 
+body {
+  padding-top: 6em;
+}
+
 #mainDiv {
   width: 33%;
   height: 75%;
