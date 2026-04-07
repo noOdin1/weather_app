@@ -16,3 +16,7 @@ Optional or desirable features:<br>
 
 1. Loading image or indicator when the page is busy retrieving data<br>
 2. Security measure using API keys<br>
+
+Able to craft a small workaround for hiding API keys. The source for this solution:<br>
+
+- https://dev.to/muhdarifrawi/env-variables-for-browser-javascript-228b
