@@ -21,7 +21,7 @@ import "./style.css";
   };
 
   // convert mph to kmh
-  const mphTokmh = (kmh) => {
+  const kmhTomph = (kmh) => {
     return kmh * 0.6213711922;
   };
 })();
