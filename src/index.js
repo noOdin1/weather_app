@@ -21,6 +21,7 @@ import createElement from "./element_creator.js";
 
 (() => {
   console.log("Weather App");
+  const apiKey = getWeatherApiKey();
 
   // convert Celcius to Fahrenheit
   const cTof = (cel) => {
