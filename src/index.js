@@ -42,4 +42,8 @@ import createElement from "./element_creator.js";
   const kmhTomph = (kmh) => {
     return kmh * 0.6213711922;
   };
+
+  let searchInput = document.getElementById("searchCityBar");
+  let searchBtn = document.getElementById("searchBtn");
+
 })();
