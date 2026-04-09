@@ -60,6 +60,7 @@ import createElement from "./element_creator.js";
       "[#-62] Search button pressed, search term: ",
       searchInput.value,
     );
+    vcQuery(searchInput.value);
   };
 
   // NOTE: Using callback function for Event Listeners
