@@ -51,6 +51,7 @@ import createElement from "./element_creator.js";
     if (event.key === "Enter") {
       event.preventDefault();
       console.log("[#-57] Search term: ", event.target.value);
+      vcQuery(searchInput.value);
     }
   };
 
