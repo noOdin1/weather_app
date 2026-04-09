@@ -46,4 +46,9 @@ import createElement from "./element_creator.js";
   let searchInput = document.getElementById("searchCityBar");
   let searchBtn = document.getElementById("searchBtn");
 
+
+  // NOTE: Using callback function for Event Listeners
+  searchInput.addEventListener("keydown", textInputEnter);
+  searchBtn.addEventListener("click", buttonClick);
+
 })();
