@@ -55,6 +55,13 @@ import createElement from "./element_creator.js";
     }
   };
 
+  const buttonClick = (event) => {
+    console.log(
+      "[#-62] Search button pressed, search term: ",
+      searchInput.value,
+    );
+  };
+
   // NOTE: Using callback function for Event Listeners
   searchInput.addEventListener("keydown", textInputEnter);
   searchBtn.addEventListener("click", buttonClick);
