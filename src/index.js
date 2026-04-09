@@ -47,6 +47,13 @@ import createElement from "./element_creator.js";
   let searchBtn = document.getElementById("searchBtn");
 
 
+  const textInputEnter = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      console.log("[#-57] Search term: ", event.target.value);
+    }
+  };
+
   // NOTE: Using callback function for Event Listeners
   searchInput.addEventListener("keydown", textInputEnter);
   searchBtn.addEventListener("click", buttonClick);
