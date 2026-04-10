@@ -48,6 +48,15 @@ import createElement from "./element_creator.js";
 
   const vcQuery = (cName) => {
     console.log("cName: ", cName);
+    let query =
+      "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/" +
+      cName +
+      "?unitGroup=us" +
+      "&include=current" +
+      "&key=" +
+      apiKey +
+      "&contentType=json";
+
   };
 
   const textInputEnter = (event) => {
