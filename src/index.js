@@ -138,6 +138,10 @@ import createElement from "./element_creator.js";
         );
         createInfoCards(json);
       })
+      .catch(function (err) {
+        // Error
+        console.log("Query failed: ", err);
+      });
   };
 
   const textInputEnter = (event) => {
