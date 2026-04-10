@@ -25,12 +25,12 @@ import createElement from "./element_creator.js";
 
   // convert Celcius to Fahrenheit
   const cTof = (cel) => {
-    return c * (9 / 5) + 32;
+    return cel * (9 / 5) + 32;
   };
 
   // convert Fahrenheit to Celcius
   const fToc = (fah) => {
-    return (f - 32) * (5 / 9);
+    return (fah - 32) * (5 / 9);
   };
 
   // convert mph to kmh
