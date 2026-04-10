@@ -74,6 +74,41 @@ import createElement from "./element_creator.js";
         // print out the result "json", convert it to string before console.log
         // console.log(JSON.stringify(json));
         // console.log(json);
+        /**
+         * NOTE:
+         *  Items to group:
+         *    Temperature group : Average Temp, Feels like, Dew Point
+         *    Humidity          : Relative Humidity, Cloud Cover, Visibility
+         *    Precipitation     : Precipitation, Precipitation chance, Percipitation type, Snowfall, Snow Depth
+         *    Wind Pressure     : Wind Speed, Wind Gust, Wind Direction, Sea Level Pressure
+         *    Conditions        : Conditions, Weather Icons
+         *
+         *  Translation
+         *    VC site data           from query
+         *    Average Temp         : temp        (degrees Farenheit)
+         *    Feels like           : feelslike   (degrees Farenheit)
+         *    Dew Point            : dew         (degrees Farenheit)
+         *
+         *    Relative Humidity    : humidity    (%)
+         *    Cloud Cover          : cloudcover  (%)
+         *    Visibility           : visibility  (miles)
+         *
+         *    Precipitation        : precip      (inches)
+         *    Precipitation chance : precipprob  (%)
+         *    Precipitation type   : preciptype  (inches)
+         *    Snowfall             : snow        (inches)
+         *    Snow Depth           : snowdepth   (inches)
+         *
+         *    Wind Speed           : windspeed   (miles per hour)
+         *    Wind Gust            : windgust    (miles per hour)
+         *    Wind Direction       : winddir     (degrees)
+         *    Sea Level Pressure   : pressure    (milibar)
+         *
+         *    Conditions           : conditions
+         *    Weather icon         : icon
+         *
+         *  Query is sent using US measurement units.
+         */
 
         console.log(
           "Current conditions in ",
