@@ -59,6 +59,10 @@ import createElement from "./element_creator.js";
 
     // URL (required), options (optional)
     return fetch(query) // execute 'fetch' with 'query'
+      .then(function (response) {
+        // when the API query is successful
+        // Successful response
+      })
   };
 
   const textInputEnter = (event) => {
