@@ -46,6 +46,8 @@ import createElement from "./element_creator.js";
   let searchInput = document.getElementById("searchCityBar");
   let searchBtn = document.getElementById("searchBtn");
 
+  const vcQuery = (cName) => {
+  };
 
   const textInputEnter = (event) => {
     if (event.key === "Enter") {
