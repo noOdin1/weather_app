@@ -136,6 +136,7 @@ import createElement from "./element_creator.js";
           " is ",
           json.currentConditions.icon,
         );
+        createInfoCards(json);
       })
   };
 
