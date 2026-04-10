@@ -47,6 +47,7 @@ import createElement from "./element_creator.js";
   let searchBtn = document.getElementById("searchBtn");
 
   const vcQuery = (cName) => {
+    console.log("cName: ", cName);
   };
 
   const textInputEnter = (event) => {
