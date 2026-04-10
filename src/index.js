@@ -70,6 +70,8 @@ import createElement from "./element_creator.js";
           throw new Error("Network response from Visual crossing was not ok");
         }
       })
+      .then(function (json) {
+      })
   };
 
   const textInputEnter = (event) => {
