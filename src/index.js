@@ -57,6 +57,8 @@ import createElement from "./element_creator.js";
       apiKey +
       "&contentType=json";
 
+    // URL (required), options (optional)
+    return fetch(query) // execute 'fetch' with 'query'
   };
 
   const textInputEnter = (event) => {
