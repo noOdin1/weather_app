@@ -110,32 +110,6 @@ import createElement from "./element_creator.js";
          *  Query is sent using US measurement units.
          */
 
-        console.log(
-          "Current conditions in ",
-          cName,
-          " is ",
-          json.currentConditions.conditions,
-        );
-        console.log(
-          "Current temperature in ",
-          cName,
-          " is ",
-          json.currentConditions.temp,
-          " Fahrenheit",
-        );
-        console.log(
-          "Current windspeed in ",
-          cName,
-          " is ",
-          json.currentConditions.windspeed,
-          " miles per hour",
-        );
-        console.log(
-          "The icon to show for ",
-          cName,
-          " is ",
-          json.currentConditions.icon,
-        );
         createInfoCards(json);
       })
       .catch(function (err) {
