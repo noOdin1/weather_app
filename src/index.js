@@ -71,6 +71,36 @@ import createElement from "./element_creator.js";
         }
       })
       .then(function (json) {
+        // print out the result "json", convert it to string before console.log
+        // console.log(JSON.stringify(json));
+        // console.log(json);
+
+        console.log(
+          "Current conditions in ",
+          cName,
+          " is ",
+          json.currentConditions.conditions,
+        );
+        console.log(
+          "Current temperature in ",
+          cName,
+          " is ",
+          json.currentConditions.temp,
+          " Fahrenheit",
+        );
+        console.log(
+          "Current windspeed in ",
+          cName,
+          " is ",
+          json.currentConditions.windspeed,
+          " miles per hour",
+        );
+        console.log(
+          "The icon to show for ",
+          cName,
+          " is ",
+          json.currentConditions.icon,
+        );
       })
   };
 
