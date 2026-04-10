@@ -3,14 +3,14 @@ This app is part of the exercise for TOP JS path at 51%.<br>
 
 The objectives outline in the course are:<br>
 
-1. Use API keys<br>
-2. Use Await/Async methods to retrieve data<br>
-3. Use Visual Crossing as source for information<br>
-4. The data must show weather forecast<br>
-5. Search specific locations and forecast the Weather<br>
-6. Toggle between Fahrenheit and Celsius for temperature forecast<br>
+1. [done] Use API keys<br>
+2. [done] Use Await/Async methods to retrieve data<br>
+3. [done] Use Visual Crossing as source for information<br>
+4. [done] The data must show weather forecast<br>
+5. [done] Search specific locations and forecast the Weather<br>
+6. [done] Toggle between Fahrenheit and Celsius for temperature forecast<br>
 7. Change page background according to the weather forecast<br>
-8. Separate functions for visual crossing query and json processing<br>
+8. [done] Separate functions for visual crossing query and json processing<br>
 
 Optional or desirable features:<br>
 
