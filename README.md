@@ -20,3 +20,15 @@ Optional or desirable features:<br>
 Able to craft a small workaround for hiding API keys. The source for this solution:<br>
 
 - https://dev.to/muhdarifrawi/env-variables-for-browser-javascript-228b
+
+<h3>Image sources and authors</h3>
+Images are sourced from giphy.com<br>
+
+partly_cloudy01.gif giphy.com<br>
+cloudy01.gif by Nora Simon (@Nora_Makes)<br>
+cloudy02.gif by 02 Slovakia (@02_Slovakia)<br>
+raining01.git giphy.com<br>
+storm01.gif giphy.com<br>
+sunny01.gif The Line Animation (@theline)<br>
+snow01.gif giphy.com<br>
+clear01.gif MonA Hayslett (@monahaylett)<br>
