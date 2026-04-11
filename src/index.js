@@ -359,6 +359,23 @@ import loadingImage from "./loading01.gif";
       `url(${currentWeatherImg})`;
   };
 
+  const loadBusyImg = () => {
+    let app = document.getElementById("resultsDiv");
+    let loaderImageDiv = createElement(
+      "div",
+      ["temporary", "image"],
+      "loadingImageDiv",
+    );
+    let img = document.createElement("img");
+    img.src = loadingImage;
+    img.alt = "Busy processing";
+    img.setAttribute("id", "busyLoadingImg");
+
+    loaderImageDiv.appendChild(img);
+
+    app.appendChild(loaderImageDiv);
+  };
+
   const vcQuery = (cName) => {
     console.log("cName: ", cName);
     let query =
