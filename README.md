@@ -4,7 +4,7 @@ This app is part of the exercise for TOP JS path at 51%.<br>
 The objectives outline in the course are:<br>
 
 1. [done] Use API keys<br>
-2. [done] Use Await/Async methods to retrieve data<br>
+2. [done] Use Promise and Callback methods to retrieve data<br>
 3. [done] Use Visual Crossing as source for information<br>
 4. [done] The data must show weather forecast<br>
 5. [done] Search specific locations and forecast the Weather<br>
