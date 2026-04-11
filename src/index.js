@@ -471,10 +471,16 @@ import loadingImage from "./loading01.gif";
         errorBracket.appendChild(errorMsg);
 
         resultsDiv.appendChild(errorBracket);
+      })
+      .finally(() => {
+        let tmpResultsDiv = document.getElementById("resultsDiv");
+        let tmpLoadingImg = document.getElementById("loadingImageDiv");
+        tmpResultsDiv.removeChild(tmpLoadingImg);
       });
   };
 
   const eventResponse = (event) => {
+    // extra processing if the event was triggered by keystrokes
     if (event.target.id == "searchCityBar") {
       if (event.key != "Enter") {
         return;
