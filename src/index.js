@@ -387,6 +387,9 @@ import loadingImage from "./loading01.gif";
       apiKey +
       "&contentType=json";
 
+    // loading image here
+    loadBusyImg();
+
     // URL (required), options (optional)
     return fetch(query) // execute 'fetch' with 'query'
       .then(function (response) {
