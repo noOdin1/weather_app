@@ -321,6 +321,44 @@ import loadingImage from "./loading01.gif";
     app.appendChild(infoBracket);
   };
 
+  /**
+   * NOTE:
+   *  Need to update this part because the data from
+   *  visual crossing is not fully translated, data
+   *  on weather conditions
+   **/
+  const changeBackground = (info) => {
+    let currentWeatherImg = "";
+    let currentConditions = info.currentConditions.conditions;
+    switch (currentConditions) {
+      case "Partially cloudy":
+        currentWeatherImg = day_to_image["cloudy"];
+        break;
+      case "partly_cloudy":
+        currentWeatherImg = day_to_image["cloudy"];
+        break;
+      case "Rain, Partially cloudy":
+        currentWeatherImg = day_to_image["raining"];
+        break;
+      case "Rain":
+        currentWeatherImg = day_to_image["raining"];
+        break;
+      case "storm":
+        currentWeatherImg = day_to_image["storm"];
+        break;
+      case "Snow, Partially cloudy":
+        currentWeatherImg = day_to_image["snow"];
+        break;
+      case "Snow":
+        currentWeatherImg = day_to_image["snow"];
+        break;
+      default:
+        currentWeatherImg = day_to_image["clear"];
+    }
+    document.getElementById("mainDiv").style.backgroundImage =
+      `url(${currentWeatherImg})`;
+  };
+
   const vcQuery = (cName) => {
     console.log("cName: ", cName);
     let query =
