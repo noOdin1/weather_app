@@ -446,7 +446,9 @@ import loadingImage from "./loading01.gif";
          *
          *  Query is sent using US measurement units.
          */
-
+        // console.dir(json);
+        changeBackground(json);
+        middleIconAndInfo(json);
         createInfoCards(json);
       })
       .catch(function (err) {
