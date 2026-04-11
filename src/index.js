@@ -395,12 +395,16 @@ import loadingImage from "./loading01.gif";
       .then(function (response) {
         // when the API query is successful
         // Successful response
+
         if (response.ok) {
           console.log("Successfully executed Visual Crossing query");
           // It is known that the response will be a json
           return response.json();
         } else {
-          throw new Error("Network response from Visual crossing was not ok");
+          if (response.status == "400") {
+            throw new Error("No such city");
+          }
+          throw new Error("Visual Crossing general response error");
         }
       })
       .then(function (json) {
