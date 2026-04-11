@@ -304,6 +304,23 @@ import loadingImage from "./loading01.gif";
     resultDiv.appendChild(summaryIcon);
   };
 
+  const createInfoCards = (info) => {
+    // function to create the information cards on this app
+    // 'info' must be of json type
+    let app = document.getElementById("resultsDiv");
+    let infoBracket = createElement(
+      "div",
+      ["information", "bracket"],
+      "infoBracket",
+    );
+    let tempGrp = createTempGroup(info);
+    let humidityClouds = createHumidityCloudsGrp(info);
+
+    infoBracket.appendChild(tempGrp);
+    infoBracket.appendChild(humidityClouds);
+    app.appendChild(infoBracket);
+  };
+
   const vcQuery = (cName) => {
     console.log("cName: ", cName);
     let query =
