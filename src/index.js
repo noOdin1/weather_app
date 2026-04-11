@@ -3,6 +3,10 @@ import "./reset_styling.css";
 import "./style.css";
 import { getWeatherApiKey } from "./env.js";
 import createElement from "./element_creator.js";
+import {
+  removeAllChildElemById,
+  removeAllchildElemByClass,
+} from "./removeAllChildElem.js";
 /**
  * NOTE:
  *  Need to import the image as a resource first. Or else
