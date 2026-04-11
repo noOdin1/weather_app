@@ -223,6 +223,64 @@ import loadingImage from "./loading01.gif";
     return tempGrpCard;
   };
 
+  const getWeatherIcons = (info) => {
+    let tmpElem;
+    switch (info.currentConditions.conditions) {
+      case "Partially cloudy":
+        tmpElem = createElement(
+          "i",
+          ["fa-solid", "fa-cloud-sun"],
+          "weatherIcon",
+        );
+        break;
+      case "partly_cloudy":
+        tmpElem = createElement(
+          "i",
+          ["fa-solid", "fa-cloud-sun"],
+          "weatherIcon",
+        );
+        break;
+      case "Rain, Partially cloudy":
+        tmpElem = createElement(
+          "i",
+          ["fa-solid", "fa-cloud-rain"],
+          "weatherIcon",
+        );
+        break;
+      case "Rain":
+        tmpElem = createElement(
+          "i",
+          ["fa-solid", "fa-cloud-rain"],
+          "weatherIcon",
+        );
+        break;
+      case "storm":
+        tmpElem = createElement(
+          "i",
+          ["fa-solid", "fa-cloud-showers-heavy"],
+          "weatherIcon",
+        );
+        break;
+      case "Snow, Partially cloudy":
+        tmpElem = createElement(
+          "i",
+          ["fa-solid", "fa-snowflake"],
+          "weatherIcon",
+        );
+        break;
+      case "Snow":
+        tmpElem = createElement(
+          "i",
+          ["fa-solid", "fa-snowflake"],
+          "weatherIcon",
+        );
+        break;
+      default:
+        tmpElem = createElement("i", ["fa-solid", "fa-sun"], "weatherIcon");
+    }
+    return tmpElem;
+  };
+
   const middleIconAndInfo = (info) => {
     let resultDiv = document.getElementById("resultsDiv");
 
