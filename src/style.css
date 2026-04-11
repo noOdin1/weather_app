@@ -8,16 +8,18 @@ body {
 }
 
 #mainDiv {
-  /* width: max(360px, 55%); */
-  width: 45%;
-  height: 75%;
+  width: 380px;
+  height: 520px;
   margin: auto;
-  padding: 2em;
+  padding: 0.2em;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
-  border: 1px solid MediumVioletRed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* Change to "100% 100%" to force fit without cropping */
+
+  /* border: 1px solid MediumVioletRed; */
   border-radius: 0.55em;
 }
 
