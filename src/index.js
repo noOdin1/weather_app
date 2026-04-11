@@ -2,21 +2,6 @@
 import "./reset_styling.css";
 import "./style.css";
 import { getWeatherApiKey } from "./env.js";
-import {
-  createP,
-  createA,
-  createDiv,
-  createButton,
-  createImg,
-  createForm,
-  createFieldset,
-  createLegend,
-  createLabel,
-  createInput,
-  createSelect,
-  createOption,
-  htmlOps,
-} from "./element_creator.js";
 import createElement from "./element_creator.js";
 
 (() => {
