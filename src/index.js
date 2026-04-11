@@ -18,6 +18,16 @@ import storm from "./storm01.gif";
 import sunny from "./sunny01.gif";
 
 (() => {
+  let day_to_image = {
+    sunny: sunny,
+    storm: storm,
+    snow: snow,
+    raining: raining,
+    partly_cloudy: partly_cloudy,
+    clear: clear,
+    cloudy: cloudy,
+  };
+
   console.log("Weather App");
   const apiKey = getWeatherApiKey();
 
