@@ -9,13 +9,14 @@ The objectives outline in the course are:<br>
 4. [done] The data must show weather forecast<br>
 5. [done] Search specific locations and forecast the Weather<br>
 6. [done] Toggle between Fahrenheit and Celsius for temperature forecast<br>
-7. Change page background according to the weather forecast<br>
+7. [done] Change page background according to the weather forecast<br>
 8. [done] Separate functions for visual crossing query and json processing<br>
+9. Display error message<br>
 
 Optional or desirable features:<br>
 
 1. Loading image or indicator when the page is busy retrieving data<br>
-2. Security measure using API keys<br>
+2. [done, partially] Security measure using API keys<br>
 
 Able to craft a small workaround for hiding API keys. The source for this solution:<br>
 
