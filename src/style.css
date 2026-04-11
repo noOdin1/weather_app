@@ -76,6 +76,16 @@ h1 {
   border-radius: 0.5em;
 }
 
+#weatherDesc {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 0.8em;
+}
+
+#weatherIcon {
+  font-size: 3.2em;
+}
+
 /*
  * NOTE: 
  * The following is a styling used for card 
