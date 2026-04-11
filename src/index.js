@@ -453,7 +453,24 @@ import loadingImage from "./loading01.gif";
       })
       .catch(function (err) {
         // Error
-        console.log("Query failed: ", err);
+        // console.log("Query failed: ", err);
+        let resultsDiv = document.getElementById("resultsDiv");
+
+        let errorBracket = createElement(
+          "div",
+          ["information", "bracket", "error"],
+          "errorBracket",
+        );
+        let errorMsg = createElement(
+          "p",
+          ["error", "information"],
+          "errorMessageParagraph",
+          err,
+        );
+
+        errorBracket.appendChild(errorMsg);
+
+        resultsDiv.appendChild(errorBracket);
       });
   };
 
