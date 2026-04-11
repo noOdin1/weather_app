@@ -11,11 +11,11 @@ The objectives outline in the course are:<br>
 6. [done] Toggle between Fahrenheit and Celsius for temperature forecast<br>
 7. [done] Change page background according to the weather forecast<br>
 8. [done] Separate functions for visual crossing query and json processing<br>
-9. Display error message<br>
+9. [done] Display error message<br>
 
 Optional or desirable features:<br>
 
-1. Loading image or indicator when the page is busy retrieving data<br>
+1. [done] Loading image or indicator when the page is busy retrieving data<br>
 2. [done, partially] Security measure using API keys<br>
 
 Able to craft a small workaround for hiding API keys. The source for this solution:<br>
@@ -33,3 +33,4 @@ storm01.gif giphy.com<br>
 sunny01.gif The Line Animation (@theline)<br>
 snow01.gif giphy.com<br>
 clear01.gif MonA Hayslett (@monahaylett)<br>
+loading01.gif giphy.com<br>
