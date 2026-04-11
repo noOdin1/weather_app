@@ -20,6 +20,7 @@ import raining from "./raining01.gif";
 import snow from "./snow01.gif";
 import storm from "./storm01.gif";
 import sunny from "./sunny01.gif";
+import loadingImage from "./loading01.gif";
 
 (() => {
   let day_to_image = {
