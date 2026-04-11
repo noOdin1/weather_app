@@ -13,7 +13,7 @@ import {
  *  after transpiling, the image location will not be
  *  recognized, and thus fails to load.
  */
-import cloudy from "./cloudy01.gif";
+import cloudy from "./cloudy02.gif";
 import clear from "./clear01.gif";
 import partly_cloudy from "./partly_cloudy01.gif";
 import raining from "./raining01.gif";
