@@ -64,6 +64,82 @@ import sunny from "./sunny01.gif";
   let searchInput = document.getElementById("searchCityBar");
   let searchBtn = document.getElementById("searchBtn");
 
+  const createHumidityCloudsGrp = (info) => {
+    let humidityCloudsGrpCard = createElement(
+      "div",
+      ["info", "group", "flip-card"],
+      "humidityCloudsGrpCard",
+    );
+    let humidityCloudsGrpInnerCard = createElement(
+      "div",
+      ["info", "group", "flip-card-inner"],
+      "humidityCloudsGrpInnerCard",
+    );
+    let humidityCloudsGrpFrontCard = createElement(
+      "div",
+      ["info", "group", "flip-card-front"],
+      "humidityCloudsGrpFrontCard",
+    );
+    let humidityCloudsGrpBackCard = createElement(
+      "div",
+      ["info", "group", "flip-card-back"],
+      "humidityCloudsGrpBackCard",
+    );
+
+    // US measurement
+    let humidityInfoUS = createElement(
+      "p",
+      ["humidity", "percentage", "us"],
+      "humidityPercentageInfoUS",
+      "Humidity: " + info.currentConditions.humidity + "%",
+    );
+    let cloudCoverInfoUS = createElement(
+      "p",
+      ["cloudCover", "percentage", "us"],
+      "cloudCoverPercentageInfoUS",
+      "Cloud Cover: " + info.currentConditions.cloudcover + "%",
+    );
+    let visibilityInfoUS = createElement(
+      "p",
+      ["visibility", "distance", "us"],
+      "visibilityInfoUS",
+      "Visibility: " + info.currentConditions.dew + "mi",
+    );
+
+    // Metric
+    let humidityInfoMetric = createElement(
+      "p",
+      ["humidity", "percentage", "metric"],
+      "humidityPercentageInfoMetric",
+      "Humidity: " + info.currentConditions.humidity + "%",
+    );
+    let cloudCoverInfoMetric = createElement(
+      "p",
+      ["cloudCover", "percentage", "metric"],
+      "cloudCoverPercentageInfoMetric",
+      "Cloud Cover: " + info.currentConditions.cloudcover + "%",
+    );
+    let visibilityInfoMetric = createElement(
+      "p",
+      ["visibility", "distance", "metric"],
+      "visibilityInfoMetric",
+      "Visibility: " + mToK(info.currentConditions.dew) + "km",
+    );
+    humidityCloudsGrpFrontCard.appendChild(humidityInfoUS);
+    humidityCloudsGrpFrontCard.appendChild(cloudCoverInfoUS);
+    humidityCloudsGrpFrontCard.appendChild(visibilityInfoUS);
+
+    humidityCloudsGrpBackCard.appendChild(humidityInfoMetric);
+    humidityCloudsGrpBackCard.appendChild(cloudCoverInfoMetric);
+    humidityCloudsGrpBackCard.appendChild(visibilityInfoMetric);
+
+    humidityCloudsGrpInnerCard.appendChild(humidityCloudsGrpFrontCard);
+    humidityCloudsGrpInnerCard.appendChild(humidityCloudsGrpBackCard);
+    humidityCloudsGrpCard.appendChild(humidityCloudsGrpInnerCard);
+
+    return humidityCloudsGrpCard;
+  };
+
   const vcQuery = (cName) => {
     console.log("cName: ", cName);
     let query =
