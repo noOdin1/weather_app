@@ -97,6 +97,29 @@ h1 {
   border-radius: 0.5em;
 }
 
+#loadingImageDiv,
+#errorBracket {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#errorBracket {
+  margin: 2em 0;
+}
+
+#errorMessageParagraph {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: red;
+}
+
+#busyLoadingImg {
+  width: 90px;
+  height: 60px;
+}
+
 /*
  * NOTE: 
  * The following is a styling used for card 
