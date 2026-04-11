@@ -32,23 +32,33 @@ import sunny from "./sunny01.gif";
   const apiKey = getWeatherApiKey();
 
   // convert Celcius to Fahrenheit
-  const cTof = (cel) => {
-    return cel * (9 / 5) + 32;
+  const cTof = (cel, fixDecimalPnt = 2) => {
+    return (cel * (9 / 5) + 32).toFixed(fixDecimalPnt);
   };
 
   // convert Fahrenheit to Celcius
-  const fToc = (fah) => {
-    return (fah - 32) * (5 / 9);
+  const fToc = (fah, fixDecimalPnt = 2) => {
+    return ((fah - 32) * (5 / 9)).toFixed(fixDecimalPnt);
   };
 
   // convert mph to kmh
-  const mphTokmh = (mph) => {
-    return mph * 1.609344;
+  const mphTokmh = (mph, fixDecimalPnt = 2) => {
+    return (mph * 1.609344).toFixed(fixDecimalPnt);
   };
 
   // convert mph to kmh
-  const kmhTomph = (kmh) => {
-    return kmh * 0.6213711922;
+  const kmhTomph = (kmh, fixDecimalPnt = 2) => {
+    return (kmh * 0.6213711922).toFixed(fixDecimalPnt);
+  };
+
+  // convert miles to kilometer
+  const mToK = (mi, fixDecimalPnt = 2) => {
+    return (mi * 1.60934).toFixed(fixDecimalPnt);
+  };
+
+  // convert kilometer to miles
+  const kToM = (ki, fixDecimalPnt = 2) => {
+    return (ki * 0.621371).toFixed(fixDecimalPnt);
   };
 
   let searchInput = document.getElementById("searchCityBar");
