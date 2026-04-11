@@ -294,24 +294,21 @@ import sunny from "./sunny01.gif";
       });
   };
 
-  const textInputEnter = (event) => {
-    if (event.key === "Enter") {
+  const eventResponse = (event) => {
+    if (event.target.id == "searchCityBar") {
+      if (event.key != "Enter") {
+        return;
+      }
       event.preventDefault();
-      console.log("[#-57] Search term: ", event.target.value);
-      vcQuery(searchInput.value);
     }
-  };
-
-  const buttonClick = (event) => {
-    console.log(
-      "[#-62] Search button pressed, search term: ",
-      searchInput.value,
-    );
+    let resultsDiv = document.getElementById("resultsDiv");
+    if (resultsDiv.hasChildNodes()) {
+      removeAllChildElemById(resultsDiv);
+    }
     vcQuery(searchInput.value);
   };
 
   // NOTE: Using callback function for Event Listeners
-  searchInput.addEventListener("keydown", textInputEnter);
-  searchBtn.addEventListener("click", buttonClick);
-
+  searchInput.addEventListener("keydown", eventResponse);
+  searchBtn.addEventListener("click", eventResponse);
 })();
