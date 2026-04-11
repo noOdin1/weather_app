@@ -140,6 +140,84 @@ import sunny from "./sunny01.gif";
     return humidityCloudsGrpCard;
   };
 
+  const createTempGroup = (info) => {
+    let tempGrpCard = createElement(
+      "div",
+      ["info", "group", "flip-card"],
+      "tempGrpCard",
+    );
+    let tempGrpInnerCard = createElement(
+      "div",
+      ["info", "group", "flip-card-inner"],
+      "tempGrpInnerCard",
+    );
+    let tempGrpFrontCard = createElement(
+      "div",
+      ["info", "group", "flip-card-front"],
+      "tempGrpFrontCard",
+    );
+    let tempGrpBackCard = createElement(
+      "div",
+      ["info", "group", "flip-card-back"],
+      "tempGrpBackCard",
+    );
+
+    // US measurement
+    let tempInfoFahrenheit = createElement(
+      "p",
+      ["fahrenheit", "temperature", "actual"],
+      "tempInFahrenheit",
+      "Temperature: " + info.currentConditions.temp + "°F",
+    );
+    let tempFeelsLikeFahrenheit = createElement(
+      "p",
+      ["fahrenheit", "temperature", "feelsLike"],
+      "tempFeelsLikeFahrenheit",
+      "Feels like: " + info.currentConditions.feelslike + "°F",
+    );
+    let tempDewPointFahrenheit = createElement(
+      "p",
+      ["fahrenheit", "temperature", "dewPoint"],
+      "tempDewPointFahrenheit",
+      "Dew Point: " + info.currentConditions.dew + "°F",
+    );
+
+    // Metric
+    let tempInfoCelsius = createElement(
+      "p",
+      ["celsius", "temperature", "actual"],
+      "tempInCelcius",
+      "Temperature: " + fToc(info.currentConditions.temp) + "°C",
+    );
+    let tempFeelsLikeCelsius = createElement(
+      "p",
+      ["celsius", "temperature", "feelsLike"],
+      "tempFeelsLikeFahrenheit",
+      "Feels like: " + fToc(info.currentConditions.feelslike) + "°C",
+    );
+    let tempDewPointCelsius = createElement(
+      "p",
+      ["celsius", "temperature", "dewPoint"],
+      "tempDewPointFahrenheit",
+      "Dew Point: " + fToc(info.currentConditions.dew) + "°C",
+    );
+
+    tempGrpFrontCard.appendChild(tempInfoFahrenheit);
+    tempGrpFrontCard.appendChild(tempFeelsLikeFahrenheit);
+    tempGrpFrontCard.appendChild(tempDewPointFahrenheit);
+
+    tempGrpBackCard.appendChild(tempInfoCelsius);
+    tempGrpBackCard.appendChild(tempFeelsLikeCelsius);
+    tempGrpBackCard.appendChild(tempDewPointCelsius);
+
+    tempGrpInnerCard.appendChild(tempGrpFrontCard);
+    tempGrpInnerCard.appendChild(tempGrpBackCard);
+
+    tempGrpCard.appendChild(tempGrpInnerCard);
+
+    return tempGrpCard;
+  };
+
   const vcQuery = (cName) => {
     console.log("cName: ", cName);
     let query =
