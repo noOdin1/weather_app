@@ -3,6 +3,19 @@ import "./reset_styling.css";
 import "./style.css";
 import { getWeatherApiKey } from "./env.js";
 import createElement from "./element_creator.js";
+/**
+ * NOTE:
+ *  Need to import the image as a resource first. Or else
+ *  after transpiling, the image location will not be
+ *  recognized, and thus fails to load.
+ */
+import cloudy from "./cloudy01.gif";
+import clear from "./clear01.gif";
+import partly_cloudy from "./partly_cloudy01.gif";
+import raining from "./raining01.gif";
+import snow from "./snow01.gif";
+import storm from "./storm01.gif";
+import sunny from "./sunny01.gif";
 
 (() => {
   console.log("Weather App");
