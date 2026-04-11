@@ -58,6 +58,12 @@ h1 {
 #searchCityBar:focus {
   outline: none;
 }
+
+#resultDiv {
+  width: 100%;
+  height: 100%;
+}
+
 /*
  * NOTE: 
  * The following is a styling used for card 
