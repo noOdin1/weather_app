@@ -223,6 +223,29 @@ import loadingImage from "./loading01.gif";
     return tempGrpCard;
   };
 
+  const middleIconAndInfo = (info) => {
+    let resultDiv = document.getElementById("resultsDiv");
+
+    let summaryIcon = createElement(
+      "div",
+      ["information", "icons", "summary", "bracket"],
+      "summaryIconDiv",
+    );
+
+    let weatherDesc = createElement(
+      "p",
+      ["description"],
+      "weatherDesc",
+      info.currentConditions.conditions,
+    );
+
+    let icon = getWeatherIcons(info);
+
+    summaryIcon.appendChild(weatherDesc);
+    summaryIcon.appendChild(icon);
+    resultDiv.appendChild(summaryIcon);
+  };
+
   const vcQuery = (cName) => {
     console.log("cName: ", cName);
     let query =
