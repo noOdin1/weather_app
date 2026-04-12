@@ -337,13 +337,16 @@ import loadingImage from "./loading01.gif";
       case "partly_cloudy":
         currentWeatherImg = day_to_image["cloudy"];
         break;
+      case "Rain, Overcast":
+        currentWeatherImg = day_to_image["raining"];
+        break;
       case "Rain, Partially cloudy":
         currentWeatherImg = day_to_image["raining"];
         break;
       case "Rain":
         currentWeatherImg = day_to_image["raining"];
         break;
-      case "storm":
+      case "Storm":
         currentWeatherImg = day_to_image["storm"];
         break;
       case "Snow, Partially cloudy":
